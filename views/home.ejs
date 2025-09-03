@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <div class="home-container">
+        <h2>The total number of users is: <%= count %>
+        </h2>
+
+        <!-- Existing button -->
+        <form action="/user/new" method="GET">
+            <button type="submit">Join Your App</button>
+        </form>
+
+        <!-- NEW button for redirecting to Show Users Page -->
+        <form action="/user" method="GET">
+            <button type="submit" class="view-users-btn">View All Users</button>
+        </form>
+    </div>
+</body>
+
+</html>
